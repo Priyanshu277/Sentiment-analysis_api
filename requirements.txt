@@ -1,0 +1,6 @@
+django==5.0.3
+djangorestframework==3.14.0
+pandas==2.2.1
+openpyxl==3.1.2
+groq
+python-dotenv

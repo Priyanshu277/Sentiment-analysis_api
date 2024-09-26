@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis File Upload</title>
+</head>
+<body>
+    <h2>Upload a CSV or XLSX file for Sentiment Analysis</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file" accept=".csv,.xlsx">
+        <button type="submit">Upload and Analyze</button>
+    </form>
+</body>
+</html>

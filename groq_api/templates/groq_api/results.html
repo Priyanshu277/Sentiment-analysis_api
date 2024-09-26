@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis Results</title>
+</head>
+<body>
+    <h2>Sentiment Analysis Results</h2>
+    <p>Positive: {{ result.positive|floatformat:2 }}</p>
+    <p>Negative: {{ result.negative|floatformat:2 }}</p>
+    <p>Neutral: {{ result.neutral|floatformat:2 }}</p>
+    <a href="{% url 'sentiment_analysis' %}">Analyze another file</a>
+</body>
+</html>
